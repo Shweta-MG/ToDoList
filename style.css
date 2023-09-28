@@ -18,15 +18,39 @@ body {
 }
 
 .wrapper {
+    position: relative;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.screen-backdrop{
+    width: 135%;
+    height: 25rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 50% 50%;
+    background-color: #f9ea85;
+    z-index: -1;
+}
+
+.menu-btn{
+    width: 2rem;
+    cursor: pointer;
+    color: #2e2e2e;
+
 }
 
 @media (min-width: 768px) {
     .wrapper {
+        position: relative;
         height: 50rem;
         width: 25rem;
         border: 10px solid #2e2e2e;
         border-radius: 40px;
     }    
+
 }
